@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220pt"
+        android:layout_marginStart="5pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginEnd="5pt"
+        android:layout_marginBottom="5pt"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5pt"
+            android:layout_marginTop="5pt"
+            android:layout_marginBottom="20pt"
+            android:text="EMI Calculator"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5pt"
+            android:layout_marginBottom="5pt"
+            android:text="Home Loan"
+            android:textColor="@color/black"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/editTextLoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5pt"
+            android:layout_marginEnd="5pt"
+            android:layout_marginBottom="5pt"
+            android:height="500pt"
+            android:background="@drawable/edittextborder"
+            android:hint="50,000 Rs"
+            android:inputType="number"
+            android:maxHeight="50pt"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5pt"
+                android:layout_marginBottom="5pt"
+                android:layout_marginEnd="70pt"
+                android:text="Loan Tenure"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+
+            <Switch
+                android:id="@+id/switchYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="50dp"
+                android:textAlignment="textEnd"
+                android:text="Year"
+                android:textSize="8pt"
+                android:minHeight="50dp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editTextTenure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5pt"
+            android:layout_marginEnd="5pt"
+            android:layout_marginBottom="5pt"
+            android:height="500pt"
+            android:background="@drawable/edittextborder"
+            android:hint="10 Month"
+            android:inputType="number"
+            android:maxHeight="50pt"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5pt"
+            android:layout_marginBottom="5pt"
+            android:text="Interest Rate"
+            android:textColor="@color/black"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/editTextRate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5pt"
+            android:layout_marginEnd="5pt"
+            android:layout_marginBottom="5pt"
+            android:height="500pt"
+            android:background="@drawable/edittextborder"
+            android:hint="10%"
+            android:inputType="number"
+            android:maxHeight="50pt"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextAns"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5pt"
+            android:layout_marginEnd="5pt"
+            android:layout_marginBottom="5pt"
+            android:height="500pt"
+            android:autofillHints=""
+            android:background="@drawable/edittextborder"
+            android:hint="Ans"
+            android:inputType="number"
+            android:maxHeight="50pt"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10pt"
+        android:layout_marginEnd="10pt"
+        android:layout_marginBottom="10pt"
+        android:background="@drawable/buttonstyle"
+        android:onClick="calculateEvent"
+        android:text="Calculate EMI"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10pt"
+        android:layout_marginEnd="10pt"
+        android:background="@drawable/buttonstyle"
+        android:onClick="calculateEvent"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+
+
