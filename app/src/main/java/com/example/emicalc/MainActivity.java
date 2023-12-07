@@ -74,10 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         t=Integer.parseInt(tenure);
                     }
                     double e=p*r*(Math.pow(1+r,t))/(Math.pow(1+r,t)-1);
-
-//               double e= doSomething(isSwitch,tenure,p,r);
-
-                    emi.setText(String.valueOf(e));
+                    emi.setText("Your EMI is: "+String.valueOf(e));
                 }
 
             }
@@ -89,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 P.setText("");
                 r.setText("");
                 N.setText("");
+                emi.setText("");
             }
         });
 
